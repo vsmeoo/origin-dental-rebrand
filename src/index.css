@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -92,12 +92,17 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Source Sans 3', system-ui, sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
   }
-  h1, h2, h3, h4 {
-    font-family: 'Playfair Display', Georgia, serif;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: 'Outfit', sans-serif;
   }
 }
 
@@ -105,16 +110,29 @@
   .text-balance {
     text-wrap: balance;
   }
+
   .hero-gradient {
     background: var(--hero-gradient);
   }
+
   .section-gradient {
     background: var(--section-gradient);
   }
+
   .card-shadow {
     box-shadow: var(--card-shadow);
   }
+
   .card-shadow-hover {
     box-shadow: var(--card-shadow-hover);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }

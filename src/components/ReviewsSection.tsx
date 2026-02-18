@@ -14,14 +14,6 @@ const reviews = [
     name: "Suresh R.",
     text: "Very reasonable pricing for the quality of treatment provided.",
   },
-  {
-    name: "Anjali D.",
-    text: "Clear explanations before starting the procedure helped ease my anxiety.",
-  },
-  {
-    name: "Venkat P.",
-    text: "Convenient location and excellent parking facilities.",
-  },
 ];
 
 const ReviewsSection = () => {
